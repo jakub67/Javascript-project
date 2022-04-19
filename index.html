@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Merriweather:wght@700&family=Raleway:wght@200&family=Righteous&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Merriweather:wght@700&family=Raleway:wght@200&family=Righteous&family=Supermercado+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="cover" class="d-flex flex-column align-items-center align-content-center">
+    <div class="nadpis">
+      <h1 class="mt-5">Cyklosalon Popojedem</h1>
+      <h3 class="mb-5">Vyberte si kolo!</h3>
+    </div>
+    
+    <div class="container m-5">     
+        <div class="row m-auto">
+          <div class="card col-12 col-md-5 col-lg-2 m-1 m-auto p-0 kol">
+            <img src="img/detske.jpg" class="card-img-top" alt="kid">
+            <div class="card-body">
+              <h5 class="card-title">Dětské kolo</h5>
+              <p class="card-text">K zapůjčení za 200 Kč/den</p>
+              <form action="" name="f1">
+              <input type="checkbox" value="200" id="chb1" class="form-check-input">
+              <input  class="poc rounded-3 text-center" type="number" value="1" min="1" style="width: 50px;">
+            </form>
+            </div>
+          </div>
+          <div class="card col-12 col-md-5 col-lg-2 m-1 m-auto p-0">
+            <img src="img/gravel.jpg" class="card-img-top" alt="mountain">
+          <div class="card-body">
+            <h5 class="card-title">Horské kolo</h5>
+            <p class="card-text">K zapůjčení za 500 Kč/den</p>
+            <form action="" name="f2">
+            <input type="checkbox" value="500" id="chb2" class="form-check-input"> 
+            <input class="poc rounded-3 text-center" type="number" value="1" min="1" style="width: 50px;">
+          </form>
+          </div>
+          </div>
+          <div class="card col-12 col-md-5 col-lg-2 m-1 m-auto p-0">
+            <img src="img/horske2.jpg" class="card-img-top" alt="round">
+            <div class="card-body">
+              <h5 class="card-title">Silniční kolo</h5>
+              <p class="card-text">K zapůjčení za 1 500 Kč/den</p>
+              <form action="" name="f3">
+              <input type="checkbox" value="1500" id="chb3" class="form-check-input"> 
+              <input class="poc rounded-3 text-center" type="number" value="1" min="1" style="width: 50px;">
+            </form>
+            </div>
+          </div>
+          <div class="card col-12 col-md-5 col-lg-2 m-1 m-auto p-0">
+            <img src="img/silnicni.jpg" class="card-img-top" alt="gravel">
+            <div class="card-body">
+              <h5 class="card-title">Gravel</h5>
+              <p class="card-text">K zapůjčení za 2 500 Kč/den</p>
+              <form action="" name="f4">
+              <input type="checkbox" value="2500" id="chb4" class="form-check-input" >
+              <input  class="poc rounded-3 text-center" type="number" value="1" min="1" style="width: 50px;"><br>
+            </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    
+    <div class="container my-5" id="info" >
+      <div class="d-flex flex-row flex-wrap align-content-between">
+        <div class="row">
+          <div class="m-3 col-md-11 col-lg-5">
+              <h4>Doba zapůjčení: </h4>
+              <form action="" name="f5">
+              <select id="dobaZapujceni" size="3" onclick="" name="dobaZapujceni" style="width: 400px;" class="form-select" aria-label="Doba zapujceni">
+                  <option value="5" selected>5 dní</option>
+                  <option value="7">7 dní</option>
+                  <option value="14">14 dní</option>
+                  <option value="31">31 dní</option>
+              </select>
+          </form>
+          </div>
+          <div class="m-3 col-md-11 col-lg-5">
+              <h4>Zapujčení cyklonosiče: </h4>
+              <form action="" name="f6">
+                  <input type="radio" value="5" name="rad" class="nosic mr-0" id="rad1"> <label for="rad1">cyklonosič střešní (+ 5 procent z ceny navíc)</label><br>
+                  <input type="radio" value="10" name="rad" class="nosic ml-0" id="rad2"> <label for="rad2">cyklonosič tažný (+ 10 procent z ceny navíc)</label><br>
+                  <input type="radio" value="0" name="rad" class="nosic ml-0" id="rad3" checked> <label for="rad3">není třeba cyklonosič</label><br>
+              </form>
+          </div>
+          <div class="m-3 col-11 m-auto">
+              <form action="" name="f7"> 
+                <h4>Zadejte Váš odhad ceny celkem: </h4>
+                 <input type="text" id="predstava" name="predstava" value="0"><br>
+               </form>
+               <p id="realita"></p> 
+          </div>
+          <div class="mb-3 col-11 m-auto">
+            <form action="" name="f8">
+                 <button id="celkovaCena" type="button" onclick="spocitejCenuKol()" class="btn btn-info">Zobraz Cenu</button>
+                 <label for="celkovaCena" class="m-1" id="cena"></label>
+             </form>
+        </div>
+          <div class="m-3 col-4 m-auto mt-5">
+              <form name="f9">
+                <h5 class="col-11 mt-5">Zadejte Váš email:</h5>
+                  <input type="email" name="mail" required class="col-11">
+                  <input type="submit" value="Odeslat" id="odesli" onclick="Odesli()" class="btn btn-info my-2 col-11">
+               </form>
+               <p id="odeslano"></p>
+          </div>
+        </div>
+        </div>
+          
+      </div>
+    </div>
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>   
+</body>
+</html>
